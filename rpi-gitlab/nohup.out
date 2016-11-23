@@ -1,0 +1,96 @@
+Sending build context to Docker daemon 49.15 kB
+Step 1 : FROM resin/rpi-raspbian
+ ---> c895a843d727
+Step 2 : MAINTAINER ltsmoke55
+ ---> Using cache
+ ---> b203f9b375e6
+Step 3 : RUN apt-get update
+ ---> Using cache
+ ---> f01938bafb21
+Step 4 : RUN apt-get install -yqq       curl       openssh-server       ca-certificates       postfix       apt-transport-https &&       curl https://packages.gitlab.com/gpg.key | apt-key add -
+ ---> Using cache
+ ---> 6a6c69f25423
+Step 5 : RUN curl -o /etc/apt/sources.list.d/gitlab_ce.list       "https://packages.gitlab.com/install/repositories/gitlab/raspberry-pi2/config_file.list?os=debian&dist=wheezy" &&       apt-get update &&       apt-get install gitlab-ce
+ ---> Running in 46f3ba3d04ce
+[91m  % T[0m[91motal    [0m[91m% [0m[91mReceived % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m  0     0    0     0    0 [0m[91m    0      0      0 --:--:-- --:--:-- --:--:--     0[0m[91m100   273 [0m[91m   0   273    0     0    234      0 --:--:--  0:00:01 --:--:--   234
+[0mHit http://archive.raspbian.org jessie InRelease
+Hit http://archive.raspberrypi.org jessie InRelease
+Ign http://resin-packages.s3-website-us-east-1.amazonaws.com resin InRelease
+Hit http://resin-packages.s3-website-us-east-1.amazonaws.com resin Release.gpg
+Get:1 http://archive.raspbian.org jessie/main armhf Packages [12.5 MB]
+Hit http://resin-packages.s3-website-us-east-1.amazonaws.com resin Release
+Get:2 http://archive.raspberrypi.org jessie/main armhf Packages [108 kB]
+Get:3 http://resin-packages.s3-website-us-east-1.amazonaws.com resin/main armhf Packages [2633 B]
+Get:4 https://packages.gitlab.com wheezy InRelease [14.7 kB]
+Get:5 https://packages.gitlab.com wheezy/main Sources [20 B]
+Get:6 https://packages.gitlab.com wheezy/main armhf Packages [22.9 kB]
+Get:7 http://archive.raspbian.org jessie/contrib armhf Packages [42.6 kB]
+Get:8 http://archive.raspbian.org jessie/non-free armhf Packages [83.5 kB]
+Get:9 http://archive.raspbian.org jessie/rpi armhf Packages [1297 B]
+Get:10 http://archive.raspbian.org jessie/firmware armhf Packages [1203 B]
+Fetched 12.7 MB in 31s (399 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  gitlab-ce
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 290 MB of archives.
+After this operation, 728 MB of additional disk space will be used.
+Get:1 https://packages.gitlab.com/gitlab/raspberry-pi2/debian/ wheezy/main gitlab-ce armhf 8.13.3-ce.0 [290 MB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 290 MB in 6min 37s (730 kB/s)
+Selecting previously unselected package gitlab-ce.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8751 files and directories currently installed.)
+Preparing to unpack .../gitlab-ce_8.13.3-ce.0_armhf.deb ...
+Unpacking gitlab-ce (8.13.3-ce.0) ...
+Setting up gitlab-ce (8.13.3-ce.0) ...
+tput: No value for $TERM and no -T specified
+
+
+       *.                  *.
+      ***                 ***
+     *****               *****
+    .******             *******
+    ********            ********
+   ,,,,,,,,,***********,,,,,,,,,
+  ,,,,,,,,,,,*********,,,,,,,,,,,
+  .,,,,,,,,,,,*******,,,,,,,,,,,,
+      ,,,,,,,,,*****,,,,,,,,,.
+         ,,,,,,,****,,,,,,
+            .,,,***,,,,
+                ,*,.
+
+     _______ __  __          __
+    / ____(_) /_/ /   ____ _/ /_
+   / / __/ / __/ /   / __ `/ __ \
+  / /_/ / / /_/ /___/ /_/ / /_/ /
+  \____/_/\__/_____/\__,_/_.___/
+
+
+gitlab: Thank you for installing GitLab!
+gitlab: To configure and start GitLab, RUN THE FOLLOWING COMMAND:
+
+sudo gitlab-ctl reconfigure
+
+gitlab: GitLab should be reachable at http://37cc41f92ec2
+gitlab: Otherwise configure GitLab for your system by editing /etc/gitlab/gitlab.rb file
+gitlab: And running reconfigure again.
+gitlab: 
+gitlab: For a comprehensive list of configuration options please see the Omnibus GitLab readme
+gitlab: https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md
+gitlab: 
+It looks like GitLab has not been configured yet; skipping the upgrade script.
+ ---> e378cf891f33
+Removing intermediate container 46f3ba3d04ce
+Step 6 : EXPOSE 80
+ ---> Running in ee0f1dcc74fd
+ ---> de0045269463
+Removing intermediate container ee0f1dcc74fd
+Step 7 : RUN "gitlab-ctl reconfigure"
+ ---> Running in f2db663c2f3a
+[91m/bin/sh: 1: gitlab-ctl reconfigure: not found
+[0mThe command '/bin/sh -c "gitlab-ctl reconfigure"' returned a non-zero code: 127

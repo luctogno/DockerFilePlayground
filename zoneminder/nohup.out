@@ -1,0 +1,162 @@
+The push refers to a repository [docker.io/ltsmoke55/rpi-zoneminder]
+9930d84e3f4c: Preparing
+8e1760e3608a: Preparing
+b4ec18ab460f: Preparing
+08b6468c8467: Preparing
+60940ee760fa: Preparing
+a57c87a8be13: Preparing
+d2afa731fbff: Preparing
+e243e6b7e492: Preparing
+219ab1998b57: Preparing
+3806176428b2: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+0cbf00cba2b6: Preparing
+954a5ffc3615: Preparing
+3a6a65834e3d: Preparing
+73712e49b0b4: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+5f70bf18a086: Preparing
+f0ab9e1ce4dc: Preparing
+ee4c0f948a14: Preparing
+8944d45952f9: Preparing
+4184bbf5e3bc: Preparing
+0cbf00cba2b6: Waiting
+954a5ffc3615: Waiting
+3a6a65834e3d: Waiting
+73712e49b0b4: Waiting
+a57c87a8be13: Waiting
+f0ab9e1ce4dc: Waiting
+d2afa731fbff: Waiting
+e243e6b7e492: Waiting
+ee4c0f948a14: Waiting
+8944d45952f9: Waiting
+219ab1998b57: Waiting
+4184bbf5e3bc: Waiting
+3806176428b2: Waiting
+5f70bf18a086: Waiting
+b4ec18ab460f: Layer already exists
+60940ee760fa: Layer already exists
+08b6468c8467: Layer already exists
+9930d84e3f4c: Layer already exists
+e243e6b7e492: Layer already exists
+d2afa731fbff: Layer already exists
+219ab1998b57: Layer already exists
+a57c87a8be13: Layer already exists
+5f70bf18a086: Layer already exists
+0cbf00cba2b6: Layer already exists
+954a5ffc3615: Layer already exists
+3a6a65834e3d: Layer already exists
+f0ab9e1ce4dc: Layer already exists
+73712e49b0b4: Layer already exists
+ee4c0f948a14: Layer already exists
+8944d45952f9: Pushed
+8e1760e3608a: Retrying in 5 seconds
+8e1760e3608a: Retrying in 4 seconds
+8e1760e3608a: Retrying in 3 seconds
+8e1760e3608a: Retrying in 2 seconds
+8e1760e3608a: Retrying in 1 second
+8e1760e3608a: Retrying in 10 seconds
+8e1760e3608a: Retrying in 9 seconds
+8e1760e3608a: Retrying in 8 seconds
+8e1760e3608a: Retrying in 7 seconds
+8e1760e3608a: Retrying in 6 seconds
+8e1760e3608a: Retrying in 5 seconds
+8e1760e3608a: Retrying in 4 seconds
+8e1760e3608a: Retrying in 3 seconds
+8e1760e3608a: Retrying in 2 seconds
+8e1760e3608a: Retrying in 1 second
+8e1760e3608a: Retrying in 15 seconds
+8e1760e3608a: Retrying in 14 seconds
+8e1760e3608a: Retrying in 13 seconds
+8e1760e3608a: Retrying in 12 seconds
+8e1760e3608a: Retrying in 11 seconds
+8e1760e3608a: Retrying in 10 seconds
+8e1760e3608a: Retrying in 9 seconds
+8e1760e3608a: Retrying in 8 seconds
+8e1760e3608a: Retrying in 7 seconds
+8e1760e3608a: Retrying in 6 seconds
+8e1760e3608a: Retrying in 5 seconds
+8e1760e3608a: Retrying in 4 seconds
+8e1760e3608a: Retrying in 3 seconds
+8e1760e3608a: Retrying in 2 seconds
+8e1760e3608a: Retrying in 1 second
+8e1760e3608a: Retrying in 20 seconds
+8e1760e3608a: Retrying in 19 seconds
+8e1760e3608a: Retrying in 18 seconds
+8e1760e3608a: Retrying in 17 seconds
+8e1760e3608a: Retrying in 16 seconds
+8e1760e3608a: Retrying in 15 seconds
+8e1760e3608a: Retrying in 14 seconds
+8e1760e3608a: Retrying in 13 seconds
+8e1760e3608a: Retrying in 12 seconds
+8e1760e3608a: Retrying in 11 seconds
+8e1760e3608a: Retrying in 10 seconds
+8e1760e3608a: Retrying in 9 seconds
+8e1760e3608a: Retrying in 8 seconds
+8e1760e3608a: Retrying in 7 seconds
+8e1760e3608a: Retrying in 6 seconds
+8e1760e3608a: Retrying in 5 seconds
+8e1760e3608a: Retrying in 4 seconds
+8e1760e3608a: Retrying in 3 seconds
+8e1760e3608a: Retrying in 2 seconds
+8e1760e3608a: Retrying in 1 second
+4184bbf5e3bc: Retrying in 5 seconds
+4184bbf5e3bc: Retrying in 4 seconds
+4184bbf5e3bc: Retrying in 3 seconds
+4184bbf5e3bc: Retrying in 2 seconds
+4184bbf5e3bc: Retrying in 1 second
+4184bbf5e3bc: Retrying in 10 seconds
+4184bbf5e3bc: Retrying in 9 seconds
+4184bbf5e3bc: Retrying in 8 seconds
+4184bbf5e3bc: Retrying in 7 seconds
+4184bbf5e3bc: Retrying in 6 seconds
+4184bbf5e3bc: Retrying in 5 seconds
+4184bbf5e3bc: Retrying in 4 seconds
+4184bbf5e3bc: Retrying in 3 seconds
+4184bbf5e3bc: Retrying in 2 seconds
+4184bbf5e3bc: Retrying in 1 second
+4184bbf5e3bc: Retrying in 15 seconds
+4184bbf5e3bc: Retrying in 14 seconds
+4184bbf5e3bc: Retrying in 13 seconds
+4184bbf5e3bc: Retrying in 12 seconds
+4184bbf5e3bc: Retrying in 11 seconds
+4184bbf5e3bc: Retrying in 10 seconds
+4184bbf5e3bc: Retrying in 9 seconds
+4184bbf5e3bc: Retrying in 8 seconds
+4184bbf5e3bc: Retrying in 7 seconds
+4184bbf5e3bc: Retrying in 6 seconds
+4184bbf5e3bc: Retrying in 5 seconds
+4184bbf5e3bc: Retrying in 4 seconds
+4184bbf5e3bc: Retrying in 3 seconds
+4184bbf5e3bc: Retrying in 2 seconds
+4184bbf5e3bc: Retrying in 1 second
+4184bbf5e3bc: Retrying in 20 seconds
+4184bbf5e3bc: Retrying in 19 seconds
+4184bbf5e3bc: Retrying in 18 seconds
+4184bbf5e3bc: Retrying in 17 seconds
+4184bbf5e3bc: Retrying in 16 seconds
+4184bbf5e3bc: Retrying in 15 seconds
+4184bbf5e3bc: Retrying in 14 seconds
+4184bbf5e3bc: Retrying in 13 seconds
+8e1760e3608a: Pushed
+4184bbf5e3bc: Retrying in 12 seconds
+4184bbf5e3bc: Retrying in 11 seconds
+4184bbf5e3bc: Retrying in 10 seconds
+4184bbf5e3bc: Retrying in 9 seconds
+4184bbf5e3bc: Retrying in 8 seconds
+4184bbf5e3bc: Retrying in 7 seconds
+4184bbf5e3bc: Retrying in 6 seconds
+4184bbf5e3bc: Retrying in 5 seconds
+4184bbf5e3bc: Retrying in 4 seconds
+4184bbf5e3bc: Retrying in 3 seconds
+4184bbf5e3bc: Retrying in 2 seconds
+4184bbf5e3bc: Retrying in 1 second
+3806176428b2: Pushed
+net/http: TLS handshake timeout
