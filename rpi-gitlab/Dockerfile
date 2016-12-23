@@ -8,12 +8,11 @@ RUN apt-get install -yqq \
       openssh-server \
       ca-certificates \
       postfix \
-      apt-transport-https && \
-      curl https://packages.gitlab.com/gpg.key | apt-key add -
+      apt-transport-https
+RUN curl https://packages.gitlab.com/gpg.key | apt-key add -
 
-RUN curl -o /etc/apt/sources.list.d/gitlab_ce.list \
-      "https://packages.gitlab.com/install/repositories/gitlab/raspberry-pi2/config_file.list?os=debian&dist=wheezy" && \
-      apt-get update && \
+RUN curl -sS https://packages.gitlab.com/install/repositories/gitlab/raspberry-pi2/script.deb.sh | sudo bash
+RUN apt-get update && \
       apt-get install gitlab-ce
 
 EXPOSE 80
