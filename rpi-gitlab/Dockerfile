@@ -1,22 +1,38 @@
-FROM resin/rpi-raspbian
+FROM resin/rpi-raspbian:jessie
+MAINTAINER ltsmoke55 <luctogno@gmail.com>
 
-MAINTAINER ltsmoke55
-
-RUN apt-get update 
-RUN apt-get install -yqq \
-      curl \
-      openssh-server \
+# Install required packages
+RUN apt-get update -q \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
       ca-certificates \
-      postfix \
-      apt-transport-https
-RUN curl https://packages.gitlab.com/gpg.key | apt-key add -
+      openssh-server \
+      wget \
+      apt-transport-https \
+      vim \
+      nano \
+      patch \
+      git-annex && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sS https://packages.gitlab.com/install/repositories/gitlab/raspberry-pi2/script.deb.sh | sudo bash
-RUN apt-get update && \
-      apt-get install gitlab-ce
+# Remove MOTD
+RUN rm -rf /etc/update-motd.d /etc/motd /etc/motd.dynamic
+RUN ln -fs /dev/null /run/motd.dynamic
 
-EXPOSE 80
+# Copy assets
+#COPY RELEASE /
+COPY assets/ /assets/
+RUN /assets/setup
 
-RUN "gitlab-ctl reconfigure"
+# Allow to access embedded tools
+ENV PATH /opt/gitlab/embedded/bin:/opt/gitlab/bin:/assets:$PATH
 
-CMD gitlab-ctl server
+# Resolve error: TERM environment variable not set.
+ENV TERM xterm
+
+# Expose web & ssh
+EXPOSE 443 80 22
+
+# Define data volumes
+VOLUME ["/etc/gitlab", "/var/opt/gitlab", "/var/log/gitlab"]
+
+# Wrapper to handle signal, trigger runit and reconfigure GitLab
+CMD ["/assets/wrapper"]
