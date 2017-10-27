@@ -3,6 +3,7 @@
 #
  
 FROM hypriot/rpi-node:7
+MANTAINER ltsmoke55
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y wget ca-certificates
